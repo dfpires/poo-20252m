@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class ExemploApiApplication {
 
 	public static void main(String[] args) {
@@ -14,8 +13,5 @@ public class ExemploApiApplication {
         SpringApplication.run(ExemploApiApplication.class, args);
 	}
 
-    @GetMapping("/mensagem")
-    public String mensagem(){
-        return "Tenha um bom dia";
-    }
+
 }
